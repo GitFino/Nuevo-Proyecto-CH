@@ -50,8 +50,13 @@
   }
   
   body {
-    font-family: var(--font-family);
-    
+    @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: auto;
+    background: linear-gradient(158deg, #7cf082 0%, #3f005ce5 37%, #4cf03e 100%);
+    width: 90%;
   }
 
   nav {
@@ -123,6 +128,7 @@
   .bio p {
     line-height: var(--line-height);
     padding: 0.6rem;
+    color: rgb(224, 220, 220) ;
   }
 
   

@@ -102,6 +102,12 @@
     display: none;
   }
 
+  .contenedor {
+    margin-top: 15.7vh;
+    margin-bottom: 3vh;
+    box-shadow: 8px 8px 3px 0px rgba(0,0,0,0.75);
+  }
+
   .bio {
     display: flex;
     justify-content: center;
@@ -124,14 +130,13 @@
     opacity: 1;
   }
   
-
   .bio p {
     line-height: var(--line-height);
     padding: 0.6rem;
     color: rgb(224, 220, 220) ;
+    text-align: justify;
   }
 
-  
   .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
@@ -152,7 +157,6 @@
     padding: 1.25rem;
   }
   
-  
   .icon {
     width: 11.875rem;
     height: 11.25rem;
@@ -172,6 +176,60 @@
     text-align: center;
     margin: 2rem 0 0;
   }
+
+/* Productos */
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.product-container {
+  margin: 1.5vw;
+  padding: 1px 16px;
+  position: relative;
+}
+
+.product-container:hover {
+  box-shadow: 0 0.8vw 0.16vw  hsl(0, 0%, 6%);
+}
+
+.product-container img {
+  width: 25vw;
+  box-shadow: 0 0.4vw 0.8vw 0.8vw hsl(0, 0%, 6%);
+}
+
+.product-container h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: whitesmoke;
+  font-size: 36px;
+  
+}
+
+.button-add {
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  transition-duration: 0.4s;
+  border: 2px solid black;
+  border-radius: 0.8vw;
+  padding: 1vw 2vh;
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+}
+
+.button-add:hover {
+  background-color: #05ad05;
+  color: white;
+}
+
 
   /*media querys*/
   @media screen and (max-width: 720px) {

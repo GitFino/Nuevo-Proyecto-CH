@@ -1,5 +1,4 @@
-
-  /* Variables */
+ /* Variables */
 
   :root {
     --variable-name: value;
@@ -424,4 +423,5 @@ input {
     }
   }
 
+  
   

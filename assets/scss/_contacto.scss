@@ -1,0 +1,87 @@
+.form {
+    width: 100%;
+    max-width: 820px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 10vh;
+    .contact-info {
+    background-color: rgb(64, 221, 64);
+  
+  }
+  
+  .contact-form {
+    background-color: #1abc9c;
+    position: relative;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    background:linear-gradient(135deg, transparent 10%, #149279);
+    position: absolute;
+    z-index: 1;
+    
+  }
+  
+  .circle.one {
+    width: 130px;
+    height: 130px;
+    top: 290px;
+    right: 130px;
+    background-size: cover;
+  }
+  
+  .circle.two {
+    width: 80px;
+    height: 80px;
+    top: 75px;
+    right: 250px;
+  }
+  
+  .contact-form::before{
+    content:"";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #1abc9c;
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+  }
+  
+  form {
+    padding: 2.3rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tittle {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1 ;
+    margin-bottom: 0.7rem;
+  }
+  
+  .input-container {
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  label {
+    display: none;
+  }
+  
+  input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+  }
+}

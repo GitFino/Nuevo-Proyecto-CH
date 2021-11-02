@@ -1,0 +1,39 @@
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: auto;
+    background: linear-gradient(158deg, #7cf082 0%, #3f005ce5 37%, #4cf03e 100%);
+    width: 90%;
+    .contenedor {
+        margin-top: 15.7vh;
+        margin-bottom: 3vh;
+        box-shadow: 8px 8px 3px 0px rgba(0,0,0,0.75);
+      }
+      .marcas {
+        max-width: 68.75rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 2.5rem;
+        .marcas-header {
+            margin-bottom: 1rem;
+          }
+          
+          .marcas-wrapper img {
+            padding: 1.25rem;
+          }
+          .icon {
+            width: 11.875rem;
+            height: 11.25rem;
+          }
+        
+          .icon-card {
+            background-color: #fff;
+            border-radius: 11px;
+            box-shadow: 0 3px 10px var(--secondary-shadow);
+            padding: 20px;
+            margin: 10px;
+          }  
+    }  
+}

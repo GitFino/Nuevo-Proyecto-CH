@@ -1,0 +1,9 @@
+.clientes__slider {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    .carousel-inner img {
+    margin: auto;
+    max-height: 80vh;
+  }
+}

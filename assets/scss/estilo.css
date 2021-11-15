@@ -147,7 +147,7 @@ footer {
   padding: 0.4rem;
 }
 .bio img:hover {
-  transform: scale(1.09, 1.09);
+  transform: scale(1.03, 1.03);
   border-radius: 15%;
   opacity: 1;
 }

@@ -7,9 +7,8 @@
   --bolder-font: 900;
   --bg-color: #fcfcfc;
   --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --secondary-color:
   --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -22,6 +21,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Barra de nav*/
+  /* Body */
 }
 * p {
   color: #000000;
@@ -37,47 +38,7 @@
 * a:hover {
   color: var(--secondary-color);
 }
-
-body {
-  @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
-  color: #333;
-  font-size: 1.2rem;
-  line-height: 1.6em;
-  margin: auto;
-  background: linear-gradient(158deg, #7cf082 0%, #3f005ce5 37%, #4cf03e 100%);
-  width: 90%;
-}
-body .contenedor {
-  margin-top: 15.7vh;
-  margin-bottom: 3vh;
-  box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.75);
-}
-body .marcas {
-  max-width: 68.75rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
-}
-body .marcas .marcas-header {
-  margin-bottom: 1rem;
-}
-body .marcas .marcas-wrapper img {
-  padding: 1.25rem;
-}
-body .marcas .icon {
-  width: 11.875rem;
-  height: 11.25rem;
-}
-body .marcas .icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
-
-/* Barra de nav*/
-nav {
+* nav {
   position: -webkit-sticky;
   position: sticky;
   top: 20px;
@@ -90,29 +51,65 @@ nav {
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav nav a {
+* nav nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
-nav nav a nav ul {
+* nav nav a nav ul {
   display: flex;
   gap: 1.9rem;
 }
-nav nav a nav ul nav ul li {
+* nav nav a nav ul nav ul li {
   font-weight: var(--bold-font);
 }
-nav nav a nav ul nav a:hover {
+* nav nav a nav ul nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
-
-.burger-menu {
+* .burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   display: none;
+}
+* body {
+  @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin: auto;
+  background: linear-gradient(158deg, #7cf082 0%, #3f005ce5 37%, #4cf03e 100%);
+  width: 90%;
+}
+* body .contenedor {
+  margin-top: 15.7vh;
+  margin-bottom: 3vh;
+  box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.75);
+}
+* body .marcas {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+* body .marcas .marcas-header {
+  margin-bottom: 1rem;
+}
+* body .marcas .marcas-wrapper img {
+  padding: 1.25rem;
+}
+* body .marcas .icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+* body .marcas .icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
 }
 
 footer {
@@ -191,7 +188,6 @@ footer {
   font-size: 16px;
   text-align: center;
   background-color: white;
-  color: black;
   transition-duration: 0.4s;
   border: 2px solid black;
   border-radius: 0.8vw;
@@ -317,8 +313,8 @@ footer {
     transform: translateX(0);
   }
 }
-/* max 420*/
-@media screen and (max-width: 420px) {
+/*  Min width 576 */
+@media (min-width: 576px) {
   .simon__logo {
     height: 10.5rem;
     width: 12.3rem;
@@ -335,6 +331,99 @@ footer {
     top: 30px;
     left: 10%;
     width: 70%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+}
+/* Min width 768 */
+@media (min-width: 768px) {
+  .simon__logo {
+    width: 15.6rem;
+    height: 10.6rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+}
+/* Min Width 992px */
+@media (min-width: 992px) {
+  .simon__logo {
+    width: 15.6rem;
+    height: 10.6rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+}
+/* Min width 1200px */
+@media (min-width: 1200px) {
+  .simon__logo {
+    width: 15.6rem;
+    height: 10.6rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;

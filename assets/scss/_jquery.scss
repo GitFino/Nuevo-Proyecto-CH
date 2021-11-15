@@ -70,7 +70,7 @@
   }
 
 
- /*Min width 768*/ 
+ /* Min width 768 */ 
 @media (min-width: 768px) {
   .simon__logo {
     width: 15.6rem;
@@ -102,12 +102,64 @@ nav ul.show {
 }
 
 
-/*Min Width 992px*/
+/* Min Width 992px */
 @media (min-width: 992px) {
-    acá va su css {...}
+  .simon__logo {
+    width: 15.6rem;
+    height: 10.6rem;
 }
 
-/*Min width 1200px*/
+nav ul {
+  position: fixed;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  top: 86px;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in;
+}
+
+nav ul li {
+  margin: 8px;
+}
+.burger-menu {
+  display: block;
+}
+
+nav ul.show {
+  transform: translateX(0);
+}
+}
+
+/* Min width 1200px */
 @media (min-width: 1200px) {
-    acá va su css {...}
+  .simon__logo {
+    width: 15.6rem;
+    height: 10.6rem;
+}
+
+nav ul {
+  position: fixed;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  top: 86px;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in;
+}
+
+nav ul li {
+  margin: 8px;
+}
+.burger-menu {
+  display: block;
+}
+
+nav ul.show {
+  transform: translateX(0);
+}
 } 

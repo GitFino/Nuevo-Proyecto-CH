@@ -25,9 +25,47 @@ a:hover {
   color: var(--secondary-color);
 }
 
-/* Body */
 
+/* Barra de nav*/
+
+nav {
+  position: sticky;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+  nav ul {
+      display: flex;
+      gap: 1.9rem;
+      nav ul li {
+      font-weight: var(--bold-font);
+
+  }
+  nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
+}
+}
+}
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+/* Body */
 body {
     @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
     color: #333;
@@ -67,42 +105,4 @@ body {
           }  
     }  
 }
-/* Barra de nav*/
-
-nav {
-  position: sticky;
-  top: 20px;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-      nav a {
-  color: var(--primary-color);
-  transition: var(--transition);
-  nav ul {
-      display: flex;
-      gap: 1.9rem;
-      nav ul li {
-      font-weight: var(--bold-font);
-
-  }
-  nav a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-}
-}
-}
-
-}
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
 }

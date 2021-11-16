@@ -7,7 +7,7 @@
   --bolder-font: 900;
   --bg-color: #fcfcfc;
   --primary-color: #4756df;
-  --secondary-color:
+  --secondary-color: ;
   --primary-shadow: #8b8eaf;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
@@ -45,7 +45,7 @@
   left: 0;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);

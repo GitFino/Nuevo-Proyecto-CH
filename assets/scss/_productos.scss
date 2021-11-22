@@ -17,8 +17,7 @@
         color: whitesmoke;
         font-size: 36px;
 }
-    .product-container:hover {
-    box-shadow: 0 0.8vw 0.16vw  hsl(0, 0%, 6%);
+
 }
     .button-add {
     border: none;
@@ -33,10 +32,14 @@
     position: absolute;
     right: 1vw;
     bottom: 1vh;
-    .button-add:hover {
-    background-color: #05ad05;
-    color: white;
-  }
+    
   }
 }
+
+.button-add:hover {
+  background-color: $colorUno;
+  color: white;
+}
+.product-container:hover {
+  box-shadow: 0 0.8vw 0.16vw  hsl(0, 0%, 6%);
 }

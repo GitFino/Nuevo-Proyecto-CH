@@ -1,27 +1,29 @@
+
 .form {
     width: 100%;
     max-width: 820px;
-    height: 500px;
+    height: 100vh;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgb(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: hidden;
+    margin-left: 10vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 10vh;
+    
     .contact-info {
     background-color: rgb(64, 221, 64);
   
   }
   
   .contact-form {
-    background-color: #1abc9c;
+    background-color: $colorTres;
     position: relative;
   }
   
   .circle {
     border-radius: 50%;
-    background:linear-gradient(135deg, transparent 10%, #149279);
+    background:linear-gradient(135deg, transparent 10%, $colorTres);
     position: absolute;
     z-index: 1;
     
@@ -47,7 +49,7 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #1abc9c;
+    background-color: $colorUno;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -84,4 +86,12 @@
     background: none;
     padding: 0.6rem 1.2rem;
   }
+
+  .btn {
+    color: whitesmoke;
+  }
+}
+
+.btn:hover {
+  background-color: $colorUno
 }

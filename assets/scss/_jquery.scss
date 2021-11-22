@@ -1,42 +1,17 @@
  /*media querys*/
 
-  /* max720*/
-  @media screen and (max-width: 720px) {
-    nav {
-      padding: 1.5rem 1rem;
-    }
-
-    .simon__logo {
-        width: 15.6rem;
-        height: 10.6rem;
-    }
-
-    nav ul {
-      position: fixed;
-      background-color: var(--bg-color);
+  /* max480*/
+  @media (min-width: 0px) and (max-width: 480px) {
+    body {
+      font-size:80%; // achicamos la fuente en pantallas pequeñas 
+      display: flex;
       flex-direction: column;
-      top: 86px;
-      left: 10%;
-      width: 80%;
-      text-align: center;
-      transform: translateX(120%);
-      transition: transform 0.5s ease-in;
-    }
-  
-    nav ul li {
-      margin: 8px;
-    }
-    .burger-menu {
-      display: block;
-    }
-  
-    nav ul.show {
-      transform: translateX(0);
-    }
+    } 
   }
 
-/*  Min width 576 */
-  @media (min-width: 576px) {
+
+/*  Max 768px */
+@media (min-width: 481px) and (max-width: 768px) {
     .simon__logo {
       height: 10.5rem;
       width: 12.3rem;
@@ -70,8 +45,8 @@
   }
 
 
- /* Min width 768 */ 
-@media (min-width: 768px) {
+ /* max 1279px */ 
+ @media (min-width: 769px) and (max-width: 1279px) {
   .simon__logo {
     width: 15.6rem;
     height: 10.6rem;
@@ -82,7 +57,7 @@ nav ul {
   background-color: var(--bg-color);
   flex-direction: column;
   top: 86px;
-  left: 10%;
+  left: 0;
   width: 80%;
   text-align: center;
   transform: translateX(120%);
@@ -102,8 +77,8 @@ nav ul.show {
 }
 
 
-/* Min Width 992px */
-@media (min-width: 992px) {
+/* Min Width 1280px */
+@media (min-width: 1280px) {
   .simon__logo {
     width: 15.6rem;
     height: 10.6rem;
@@ -136,30 +111,8 @@ nav ul.show {
 /* Min width 1200px */
 @media (min-width: 1200px) {
   .simon__logo {
-    width: 15.6rem;
+    width: 15vw;
     height: 10.6rem;
 }
 
-nav ul {
-  position: fixed;
-  background-color: var(--bg-color);
-  flex-direction: column;
-  top: 86px;
-  left: 10%;
-  width: 80%;
-  text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
 }
-
-nav ul li {
-  margin: 8px;
-}
-.burger-menu {
-  display: block;
-}
-
-nav ul.show {
-  transform: translateX(0);
-}
-} 
